@@ -58,8 +58,10 @@ class Bot:
                                 return
                         if item.action:
                             self.action(self.channel, item.get_response())
+                            break
                         else:
                             self.sendmsg(self.channel, item.get_response())
+                            break
 
 
 class Trigger:

@@ -17,7 +17,7 @@ def start_bot(item):
 
 
 def main():
-    with open(r'Seahorse.json') as f:
+    with open(r'Magic_Conch.json') as f:
         config = json.load(f)
     bot = start_bot(config)
     bot.act()
