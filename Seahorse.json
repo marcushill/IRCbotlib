@@ -5,7 +5,7 @@
     "server": "coop.test.adtran.com",
     "triggers": [
         {
-            "pattern": "^:(?P<nick>\\w+)!~(?P<real>[\\w @\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
+            "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w @\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
             "nick": [
                 "Magic_Conch",
                 "mhill"
@@ -39,7 +39,7 @@
             ]
         },
         {
-            "pattern": "^:(?P<nick>\\w+)!~(?P<real>[\\w @\\.]+)\\s*PRIVMSG\\s*(.*):(?P<message>.*)$",
+            "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w @\\.]+)\\s*PRIVMSG\\s*(.*):(?P<message>.*)$",
             "nick": [
                 "mhill"
             ],

@@ -5,7 +5,7 @@
     "server": "coop.test.adtran.com",
     "triggers": [
         {
-            "pattern": "^:(?P<nick>\\w+)!~(?P<real>[\\w @\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
+            "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w @\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
             "message": [
                 ".*Magic[ _]Conch,.*\\s+where\\s+.?.*$"
             ],
@@ -15,9 +15,9 @@
             ]
         },
         {
-            "pattern": "^:(?P<nick>\\w+)!~(?P<real>[\\w @\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
+            "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w @\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
             "message": [
-                ".*Magic[ _]Conch,.*s+or\\s+.*?.*$"
+                ".*Magic[ _]Conch,.*\\s+or\\s+.*?.*$"
             ],
             "isAction": false,
             "responses": [
@@ -28,7 +28,7 @@
             ]
         },
         {
-            "pattern": "^:(?P<nick>\\w+)!~(?P<real>[\\w @\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
+            "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w @\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
             "message": [
                 ".*Magic[ _]Conch,.*What\\s+do.*?.*$"
             ],
@@ -42,7 +42,7 @@
             ]
         },
         {
-            "pattern": "^:(?P<nick>\\w+)!~(?P<real>[\\w @\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
+            "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w @\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
             "message": [
                 ".*Magic[ _]Conch,\\.*?.*$"
             ],
@@ -70,7 +70,7 @@
             ]
         },
         {
-            "pattern": "^:(?P<nick>\\w+)!~(?P<real>[\\w @\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
+            "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w @\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
             "message": [
                 "^.*ALL HAIL THE MAGIC CONCH.*$"
             ],
@@ -80,7 +80,7 @@
             ]
         },
         {
-            "pattern": "^:(?P<nick>\\w+)!~(?P<real>[\\w @\\.]+)\\s*PRIVMSG\\s*(.*):(?P<message>.*)$",
+            "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w @\\.]+)\\s*PRIVMSG\\s*(.*):(?P<message>.*)$",
             "nick": [
                 "mhill",
                 "jordan"

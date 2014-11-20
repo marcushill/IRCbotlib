@@ -32,7 +32,7 @@ class Bot:
         self.sock.send(msg.encode('utf-8'))
 
     def recv(self, amount):
-        return self.sock.recv(amount).decode('ascii')
+        return self.sock.recv(amount).decode('utf-8')
 
     def action(self, chan, action):
         self.sendmsg(chan, '\x01ACTION ' + action + '\x01')
@@ -40,6 +40,10 @@ class Bot:
     def add_trigger(self, trigger):
         self.triggers.append(trigger)
 
+    def users(self):
+        #^:(?P<nick>\w+)!~(?P<real>[\w @\.]+)\s*PRIVMSG\s*#(?P<channel>\w+)\s*:ACTION(?P<message>.*)$
+        pass
+    
     def act(self):
         while True:
             ircmsg = self.recv(2048).strip('\n\r')
