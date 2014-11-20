@@ -41,6 +41,16 @@
                 "All the things."
             ]
         },
+                {
+            "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w @\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
+            "message": [
+                "^.*Magic[ _]Conch,.*what\\s*is\\s*love.*?.*$"
+            ],
+            "isAction": false,
+            "responses": [
+                "Baby don't hurt me, don't hurt me, no more."
+            ]
+        },
         {
             "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w @\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
             "message": [
@@ -77,16 +87,6 @@
             "isAction": false,
             "responses": [
                 "I am hailed!"
-            ]
-        },
-        {
-            "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w @\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
-            "message": [
-                ".*Magic[ _]Conch,*what\\sis\\slove.?.*$"
-            ],
-            "isAction": false,
-            "responses": [
-                "Baby don't hurt me, don't hurt me, no more."
             ]
         },
         {
