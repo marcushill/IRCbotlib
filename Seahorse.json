@@ -5,10 +5,12 @@
     "server": "coop.test.adtran.com",
     "triggers": [
         {
-            "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w @\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
+            "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w -@\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
             "nick": [
                 "Magic_Conch",
-                "mhill"
+                "mhill",
+                "Marcus",
+                "jordan"
             ],
             "message": [
                 ".*Follow the seahorse.*"
@@ -17,7 +19,7 @@
             "responses": [
                 "goes to Glove World",
                 "goes to Rock Bottom",
-                "goes to Patrick's Rock",
+                "goes to Patrick's Rock", 
                 "goes to Sandy's Dome",
                 "goes to Chum Bucket",
                 "goes to Goo Lagoon",
@@ -39,7 +41,27 @@
             ]
         },
         {
-            "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w @\\.]+)\\s*PRIVMSG\\s*(.*):(?P<message>.*)$",
+            "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w -@\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
+            "message": [
+                ".*Seahorse,\\.*?.*$"
+            ],
+            "isAction": false,
+            "responses": [
+                "NEIGH!"
+            ]
+        },
+        {
+            "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w -@\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
+            "isAction": false,
+            "message": [
+                ".*All opposed.*"
+            ],
+            "responses": [
+                "NEIGH!"
+            ]
+        },
+        {
+            "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w -@\\.]+)\\s*PRIVMSG\\s*(.*):(?P<message>.*)$",
             "nick": [
                 "mhill"
             ],

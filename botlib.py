@@ -1,7 +1,6 @@
 #!python3
 __author__ = 'mhill'
 
-#!python3
 import socket
 import random
 import time
@@ -47,7 +46,7 @@ class Bot:
     def act(self):
         while True:
             ircmsg = self.recv(2048).strip('\n\r')
-            print(ircmsg)
+            print(ircmsg.encode('utf-8'))
             if ircmsg.find("PING :") != -1:
                 pingid = ircmsg.split(':')
                 self.send("PONG " + pingid[-1] + "\r\n")

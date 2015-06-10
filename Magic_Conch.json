@@ -5,7 +5,7 @@
     "server": "coop.test.adtran.com",
     "triggers": [
         {
-            "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w @\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
+            "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w -@\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
             "message": [
                 ".*Magic[ _]Conch,.*\\s+where\\s+.?.*$"
             ],
@@ -15,7 +15,7 @@
             ]
         },
         {
-            "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w @\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
+            "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w -@\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
             "message": [
                 ".*Magic[ _]Conch,.*\\s+or\\s+.*?.*$"
             ],
@@ -24,11 +24,12 @@
                 "Neither.",
                 "Both",
                 "The first one.",
-                "The second one."
+                "The second one.",
+                "Let's flip a coin. Heads for the first. Tails for the second. Coin Bot, flip."
             ]
         },
         {
-            "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w @\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
+            "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w -@\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
             "message": [
                 ".*Magic[ _]Conch,.*What\\s+do.*?.*$"
             ],
@@ -42,7 +43,7 @@
             ]
         },
                 {
-            "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w @\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
+            "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w -@\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
             "message": [
                 "^.*Magic[ _]Conch,.*what\\s*is\\s*love.*?.*$"
             ],
@@ -52,7 +53,7 @@
             ]
         },
         {
-            "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w @\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
+            "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w -@\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
             "message": [
                 ".*Magic[ _]Conch,\\.*?.*$"
             ],
@@ -65,7 +66,7 @@
                 "Yes.",
                 "Try asking again.",
                 "It is certain.",
-                "It is is decidedly so.",
+                "It is decidedly so.",
                 "Without a doubt.",
                 "Yes definitely.",
                 "You may rely on it.",
@@ -80,7 +81,7 @@
             ]
         },
         {
-            "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w @\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
+            "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w -@\\.]+)\\s*PRIVMSG\\s*#(?P<channel>\\w+)\\s*:(?P<message>.*)$",
             "message": [
                 "^.*ALL HAIL THE MAGIC CONCH.*$"
             ],
@@ -90,7 +91,7 @@
             ]
         },
         {
-            "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w @\\.]+)\\s*PRIVMSG\\s*(.*):(?P<message>.*)$",
+            "pattern": "^:(?P<nick>\\w+)!~*(?P<real>[\\w -@\\.]+)\\s*PRIVMSG\\s*(.*):(?P<message>.*)$",
             "nick": [
                 "mhill",
                 "jordan",
